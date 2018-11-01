@@ -56,7 +56,7 @@ def rm(args):  # delete functionality
                     command = "rm -r "
                 else:
                     command = "rm "
-                out = run(command + args['directory'] + snapshot + "/snapshot" + args['filename'],
+                out = run(command + args['directory'] + snapshot + "/snapshot\"" + args['filename'] + "\",
                           shell=True,
                           stderr=devnull)
                 if args['verbose']:
